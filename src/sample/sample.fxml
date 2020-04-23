@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<GridPane alignment="center" hgap="10" prefHeight="573.0" prefWidth="374.0" vgap="10"-->
+<!--          xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">-->
+<!--</GridPane>-->
+
+<AnchorPane onMouseClicked="#paneClick"
+        prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <Button layoutX="255.0" layoutY="169.0" onAction="#processOperation" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="-" />
+   <Button layoutX="175.0" layoutY="169.0" onAction="#processOperation" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="*" />
+   <Button layoutX="95.0" layoutY="169.0" onAction="#processOperation" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="/" />
+   <Button layoutX="15.0" layoutY="169.0" mnemonicParsing="false" onAction="#clearText" prefHeight="80.0" prefWidth="80.0" text="C" />
+   <Button layoutX="255.0" onAction="#processOperation"
+           layoutY="249.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="+" />
+   <Button layoutX="175.0" layoutY="249.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="9" />
+   <Button layoutX="95.0" layoutY="249.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="8" />
+   <Button layoutX="15.0" layoutY="249.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="7" />
+   <Button layoutX="255.0" layoutY="329.0" onAction="#processOperation" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="\%" />
+   <Button layoutX="175.0" layoutY="329.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="6" />
+   <Button layoutX="95.0" layoutY="329.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="5" />
+   <Button layoutX="15.0" layoutY="329.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="4" />
+   <Button layoutX="255.0" onAction="#calculate"
+           layoutY="409.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="80.0" text="=" />
+   <Button layoutX="175.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="3" />
+   <Button layoutX="95.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="2" />
+   <Button layoutX="15.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="1" />
+   <Button layoutX="175.0" layoutY="489.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="80.0" text="." />
+   <Button layoutX="15.0" layoutY="489.0" mnemonicParsing="false" onAction="#clickNumber" prefHeight="80.0" prefWidth="160.0" text="0" />
+   <TextField fx:id="textArea" onKeyPressed="#keyListener"
+              alignment="CENTER_RIGHT" editable="false" layoutX="15.0" layoutY="66.0" prefHeight="80.0" prefWidth="321.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></TextField>
+   <TextField fx:id="calcArea" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="16.0" prefHeight="52.0" prefWidth="321.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></TextField>
+</AnchorPane>
